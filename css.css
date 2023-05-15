@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, .8)),url(images/bgi2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner2{
+  width: 100%;
+  height: 100%;
+  background-color: #5a5537;
+  background-size: cover;
+  background-position: center;
+}
+.banner3{
+  width: 100%;
+  height: 100vh;
+  padding-top: 10%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, .8)),url(images/pastor.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner4{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10%;
+    background-color: #5a5537;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+.banner5{
+  width: 100%;
+  height: 100vh;
+  padding-top: 15%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, .8)),url(images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/*----------------------------------------NAVBAR DESIGN----------------------------------------------*/
+.navbar{
+  width: 97%;
+  height: 25px;
+  padding: 35px 0px 35px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    background: black;
+}
+.navbar ul{
+    padding-right: 50px;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #92863d;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+    font-size: 2vw;
+}
+.navbar .icon {
+  display: none;
+}
+.Threelines{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .navbar ul{
+        display: none;
+    }
+    .Threelines{
+        display: block;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 20px;
+    }
+    
+    .navbar.clicked ul{
+       display: flex;
+    }
+}
+
+/*-------------------------------------------------END----------------------------------------------------*/
+
+
+.text-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.text{
+    color: white;
+}
+.text2{
+    color: white;
+    width: 500px;
+    height: 300px;
+}
+
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+.card {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border: none;     
+}
+.card2 {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    color: white;
+    margin: 50px 50px 50px 50px;
+    
+}
+p{
+    font-size: 2vw;
+}
+
+.card img{
+    height: inherit;
+    width: inherit;
+}
+.card2 img{
+    filter: blur(10);
+}
+.content { 
+    bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;     
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	transition: transform 0.5s;
+	transform: translateY(100%);
+    position: sticky;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card:hover .content {
+	transform: translateY(0);
+}
+.contact-text{
+    color: white;
+    text-align: center;
+
+}
+footer{
+    height: 20px;
+    background-color: gray;
+    color: black;
+    text-align: right;
+    align-content: center;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.hmBtn{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    background: #5e5e5e;
+    color: white;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
